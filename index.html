@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uydu Veri Pazarı</title>
+</head>
+<body>
+    <button onclick="connectToMetamask()">Metamask'a Bağlan</button>
+
+    <h2>Veri Ekle</h2>
+    <input type="text" id="veriHash" placeholder="Veri Hash">
+    <input type="number" id="fiyat" placeholder="Fiyat (wei)">
+    <button onclick="veriEkle(document.getElementById('veriHash').value, document.getElementById('fiyat').value)">Veri Ekle</button>
+
+    <h2>Veri Satın Al</h2>
+    <input type="number" id="veriId" placeholder="Veri ID">
+    <button onclick="veriSatinAl(document.getElementById('veriId').value, document.getElementById('fiyat').value)">Veri Satın Al</button>
+
+    <script src="web3.min.js"></script> <!-- web3.js'in son sürümünü eklediğinizden emin olun -->
+    <script src="app.js"></script>
+</body>
+</html>
